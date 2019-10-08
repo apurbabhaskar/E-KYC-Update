@@ -1,0 +1,19 @@
+<div class="">
+
+  <!-- Main Header -->
+  <app-base-header></app-base-header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <app-base-left-sidebar></app-base-left-sidebar>
+  <!-- Content Wrapper. Contains page content -->
+  
+  <app-base-content>
+
+
+
+  </app-base-content>
+  <div class="centerdiv" style="z-index:-1;position:relative">
+    <div *mkLoadingPage="{checkPendingHttp: true, checkPendingRoute: true}" style="z-index:-1;position:relative">
+      <mk-folding-cube color="#EF3341"></mk-folding-cube>
+    </div>
+  </div>
+</div>

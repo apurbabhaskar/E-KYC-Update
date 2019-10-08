@@ -1,0 +1,637 @@
+  <div class="content-wrapper">
+  <div class="custom-block white-tabs rounded">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">           
+        <h3><a [routerLink]="['/app/home']"><i class="fa fa-arrow-circle-o-left"></i></a> Entity Data</h3>        
+      </div>
+      <div class="custom-default-tabs">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#Details" aria-controls="home" role="tab" data-toggle="tab">Client Details</a>
+          </li>
+          <li role="presentation">
+            <a href="#Parties" aria-controls="profile" role="tab" data-toggle="tab" (click)="loadPartiesData()">Associated Parties</a>
+          </li>
+          <li role="presentation">
+            <a href="#Contact" aria-controls="messages" role="tab" data-toggle="tab">Contact Details</a>
+          </li>
+          <li role="presentation">
+            <a href="#Documenttion" aria-controls="settings" role="tab" data-toggle="tab" (click)="loadDocumentData()">Documenttion</a>
+          </li>
+          <li role="presentation">
+              <a href="#Cases" aria-controls="settings" role="tab" data-toggle="tab" (click)="loadCaseData()">Cases</a>
+          </li>
+          <li role="presentation">
+              <a href="#Comments" aria-controls="settings" role="tab" data-toggle="tab">Comments</a>
+          </li>
+          <li role="presentation">
+              <a href="#Hstory" aria-controls="settings" role="tab" data-toggle="tab" (click)="loadHistoryData()">Hstory</a>
+          </li>
+          
+        </ul>
+        <hr>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          
+            <div role="tabpanel" class="tab-pane active" id="Details">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <div class="panel panel-default custom-plain-panel">                    
+                    <div class="panel-body" >
+                      <div class="col-xs-5 col-sm-5">
+                          <div class="inner-addon right-addon">
+                              <i class="glyphicon glyphicon-search"></i>
+                              <input type="text" name="SearchStr" class="form-control" placeholder="Search " aria-describedby="basic-addon1" [(ngModel)]="EntitySearchStr">
+                            </div> 
+                            <br/>
+                            <table class="table table-striped">
+                            <tbody>                      
+                                <tr>
+                                  <td>
+                                    Customer ID
+                                  </td>
+                                  <td style="text-align: right;"> 
+                                    356973
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    Legal Entity Name
+                                  </td>
+                                  <td style="text-align: right;">
+                                      Bimalesh Shoo
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                      Trading Name
+                                  </td>
+                                  <td style="text-align: right;">
+                                      Wipro Holmes
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      Pervious Name
+                                </td>
+                                <td style="text-align: right;">
+                                    Sardar Singh
+                              </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      Alias Name
+                                </td>
+                                <td style="text-align: right;">
+                                    RIJUM
+                              </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                    Type of Entity
+                                </td>
+                                <td style="text-align: right;">
+                                    Occupied
+                              </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      Customer Registration Number
+                                </td>
+                                <td style="text-align: right;">
+                                    MH14FY45
+                              </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      Country of Operation
+                                </td>
+                                <td style="text-align: right;">
+                                    India
+                              </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                     LEI id
+                                </td>
+                                <td style="text-align: right;">
+                                    EGQPS1234
+                              </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                      </div>          
+                      <div class="col-xs-1 col-sm-1">
+                        <div class="line"></div>
+                        <div class="wordwrapper">
+                          
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-sm-6">      
+                          <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h3 class="panel-title">Registered Address :</h3>
+                              </div>
+                              <div class="panel-body">
+                                <div class="col-sm-2">
+                                    <img 
+                                  src="../.././../assets/images/location.svg"  alt="Location" height="20px"
+                                  width="20px" />
+                                </div>
+                                <div class="col-sm-10">
+                                    Wipro, Hinjawadi Phase II, Hinjewadi Rajiv Gandhi Infotech Park, Hinjawadi, Pune, Maharashtra 411057
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                  <h3 class="panel-title">Business Operating Address :</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="col-sm-2">
+                                        <img 
+                                      src="../.././../assets/images/location.svg"  alt="Location" height="20px"
+                                      width="20px" />
+                                    </div>
+                                    <div class="col-sm-10">
+                                        Wipro, Hinjawadi Phase II, Hinjewadi Rajiv Gandhi Infotech Park, Hinjawadi, Pune, Maharashtra 411057
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title">Correspondence Address :</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                      <div class="col-sm-2">
+                                          <img 
+                                        src="../.././../assets/images/location.svg"  alt="Location" height="20px"
+                                        width="20px" />
+                                      </div>
+                                      <div class="col-sm-10">
+                                          Wipro, Hinjawadi Phase II, Hinjewadi Rajiv Gandhi Infotech Park, Hinjawadi, Pune, Maharashtra 411057
+                                      </div>
+                                  </div>
+                                </div>
+                        
+                      </div>
+                      </div>       
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Parties">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="col-xs-2 col-sm-2">
+                        <button type="button" class="btn-custom-primary btn-outline btn-md"> <i class="fa fa-plus" aria-hidden="true"></i> Create New</button>
+                      </div>
+                      <div class="col-xs-2 col-sm-2">
+                        <b>Assocition Type</b> 
+                      </div>
+                      <div class="col-xs-4 col-sm-4">
+                        <select class="form-control" id="sel1">
+                            <option>Select All</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select> 
+                      </div>
+                    </div>
+                </div>              
+                
+                <br/>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="table-responsive fixed-table-header">
+                          <table class="table table-striped custom-table borderless">
+                            <thead>
+                              <tr>                                  
+                                <th style="text-align: center;">                                    
+                                    ID
+                                  <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                  Legal Entity Name
+                                  <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                  Relationship
+                                  <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Related To
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Ownership
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Updated By
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Updated Date
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                </th>
+                              </tr>
+                            </thead>
+                  
+                            <tbody>                      
+                              <tr *ngFor="let item of partieslist">   
+                                <td style="text-align: center;">
+                                    <a style="cursor: pointer" (click)="GetRecordById(item)">{{item.Id}}</a>
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.legal_name}}
+                                </td>
+                                <td style="text-align: center;">
+                                    {{item.relationship}}
+                                </td>
+                                <td style="text-align: center;">
+                                      {{item.related_to}}
+                                </td>
+                                <td style="text-align: center;">
+                                    {{item.ownership}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.updated_by}}
+                                </td>
+                                <td style="text-align: center;">
+                                    {{item.updated_date}}
+                                  </td>
+                                <td style="text-align: center;">
+                                  <a style="cursor: pointer" (click)="GetRecordById(item)"> <i class="fa fa-pencil-square-o"></i> </a>
+                                </td>
+                              </tr>                              
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="col-md-12">
+                          <ngb-pagination [collectionSize]="_totalnoofrows" [(page)]="pagenumber" [boundaryLinks]="true" (pageChange)="pageChanged($event)" class="pull-right"></ngb-pagination>
+                        </div>
+                        
+                      </div>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Contact">
+                <div class="col-sm-12 col-sx-12">
+                <h4> KYC Owner Details</h4>
+                </div>
+                <br/>
+                <br/>
+                <div class="col-sm-6 col-sx-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">Primary</h4>
+                        </div>
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-sm-2">
+                                <img src="../.././../assets/images/icons8-profile-80.png"  alt="Location" height="20px"
+                              width="20px" />
+                            </div>
+                            <div class="col-sm-10">
+                              <b>
+                                Bimalesh Sahoo
+                              </b>                                
+                            </div>
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <div class="col-sm-2">
+                                <img src="../.././../assets/images/icons8-email-64.png"  alt="Location" height="20px"
+                              width="20px" />
+                            </div>
+                            <div class="col-sm-10">  
+                              <b>
+                                <u>
+                              <a href="mailto:bimalesh.sahoo1@wipro.com">
+                                bimalesh.sahoo1@wipro.com  
+                              </a> 
+                            </u>  
+                            </b>                          
+                            </div>
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <div class="col-sm-2">
+                                <img src="../.././../assets/images/icons8-telephone-64.png"  alt="Location" height="20px"
+                              width="20px" />
+                            </div>
+                            <div class="col-sm-10">
+                              <b>
+                                8759093590
+                              </b>                                
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-6 col-sx-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">Secondary</h4>
+                        </div>
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-sm-2">
+                                <img src="../.././../assets/images/icons8-profile-80.png"  alt="Location" height="20px"
+                              width="20px" />
+                            </div>
+                            <div class="col-sm-10">
+                              <b>
+                                Tanvir Kaur
+                              </b>                                
+                            </div>
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <div class="col-sm-2">
+                                <img src="../.././../assets/images/icons8-email-64.png"  alt="Location" height="20px"
+                              width="20px" />
+                            </div>
+                            <div class="col-sm-10">  
+                              <b>
+                                <u>
+                              <a href="mailto:tanvir.kaur1@wipro.com">
+                                bimalesh.sahoo1@wipro.com  
+                              </a> 
+                            </u>  
+                            </b>                          
+                            </div>
+                          </div>
+                          <br/>
+                          <div class="row">
+                            <div class="col-sm-2">
+                                <img src="../.././../assets/images/icons8-telephone-64.png"  alt="Location" height="20px"
+                              width="20px" />
+                            </div>
+                            <div class="col-sm-10">
+                              <b>
+                                8759093590
+                              </b>                                
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Documenttion">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="col-xs-2 col-sm-2">
+                        <button type="button" class="btn-custom-primary btn-outline btn-md"> <i class="fa fa-plus" aria-hidden="true"></i> Add Document</button>
+                      </div>
+                      <div class="col-xs-10 col-sm-10">                         
+                        <div class="checkbox">
+                            <label>Show All : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" value=""></label>
+                          </div>
+                      </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="table-responsive fixed-table-header">
+                          <table class="table table-striped custom-table borderless">
+                            <thead>
+                              <tr>                                  
+                                <th style="text-align: center;">                                    
+                                  ID
+                                  <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                  Name
+                                  <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                  Souce
+                                  <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Category
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Type
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Status
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Connection Point
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Updated Date
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                </th>
+                              </tr>
+                            </thead>
+                  
+                            <tbody>                      
+                              <tr *ngFor="let item of doclist">   
+                                <td style="text-align: center;">
+                                    <a style="cursor: pointer" (click)="GetRecordById(item)">{{item.Id}}</a>
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.name}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.source}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.category}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.type}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.status}}
+                                </td>
+                                <td style="text-align: center;">
+                                    {{item.connection_point}}
+                                  </td>
+                                <td style="text-align: center;">
+                                    {{item.updated_date}}
+                                  </td>
+                                <td style="text-align: center;">
+                                  <a style="cursor: pointer" (click)="GetRecordById(item)"> <i class="fa fa-pencil-square-o"></i> </a>
+                                </td>
+                              </tr>                              
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="col-md-12">
+                          <ngb-pagination [collectionSize]="_totalnoofrows" [(page)]="pagenumber" [boundaryLinks]="true" (pageChange)="pageChanged($event)" class="pull-right"></ngb-pagination>
+                        </div>
+                        
+                      </div>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Cases">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="col-xs-2 col-sm-2">
+                        <button type="button" class="btn-custom-primary btn-outline btn-md"> <i class="fa fa-plus" aria-hidden="true"></i> Add Task</button>
+                      </div>
+                      <div class="col-xs-2 col-sm-2">
+                        <b>Case Type</b> 
+                      </div>
+                      <div class="col-xs-3 col-sm-3 ">
+                        <select class="form-control" id="sel1">
+                            <option>Select All</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select> 
+                      </div>
+                      <div class="col-xs-2 col-sm-2">
+                          <b>Case Status</b> 
+                        </div>
+                        <div class="col-xs-3 col-sm-3">
+                          <select class="form-control" id="sel1">
+                              <option>Select All</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select> 
+                        </div>
+                    </div>
+                </div>  
+                <br/> 
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="table-responsive fixed-table-header">
+                          <table class="table table-striped custom-table borderless">
+                            <thead>
+                              <tr>                                  
+                                <th style="text-align: center;">                                    
+                                  Case Name
+                                  <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                  Required for Stage
+                                  <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                  Activity Name
+                                  <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Task Name
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Assigned Team
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Assigned User
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Due Date
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Task Duration
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Status
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                    Requestor
+                                    <i class="fa fa-sort" aria-hidden="true"></i>
+                                </th>
+                                <th style="text-align: center;">
+                                </th>
+                              </tr>
+                            </thead>
+                  
+                            <tbody>                      
+                              <tr *ngFor="let item of caselist">   
+                                <td style="text-align: center;">
+                                    <a style="cursor: pointer" (click)="GetRecordById(item)">{{item.case_name}}</a>
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.arequired_stage}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.activity_name}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.task_name}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.assigned_team}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.assigned_user}}
+                                </td>
+                                <td style="text-align: center;">
+                                    {{item.due_date}}
+                                  </td>
+                                <td style="text-align: center;">
+                                  {{item.task_duration}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.status}}
+                                </td>
+                                <td style="text-align: center;">
+                                  {{item.requestor}}
+                                </td>
+                                <td style="text-align: center;">
+                                  <a style="cursor: pointer" (click)="GetRecordById(item)"> <i class="fa fa-pencil-square-o"></i> </a>
+                                </td>
+                              </tr>                              
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="col-md-12">
+                          <ngb-pagination [collectionSize]="_totalnoofrows" [(page)]="pagenumber" [boundaryLinks]="true" (pageChange)="pageChanged($event)" class="pull-right"></ngb-pagination>
+                        </div>
+                        
+                      </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Comments">
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Hstory">
+                <div class="col-sm-12 col-sx-12">
+                <div class="row">
+                    <div class="col-md-12 offset-md-6">                     
+                      <ul class="timeline" >
+                        <li *ngFor="let item of historylist">
+                          <p>{{item.history_data}}</p>
+                          <br/>
+                        </li>                                              
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+</div>
+
+

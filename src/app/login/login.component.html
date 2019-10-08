@@ -1,0 +1,51 @@
+<div class="container-login100">
+<section class="login-wrapper login-template2">
+    <div class="login-block">
+      <form class="form-horizontal" #f="ngForm" >
+        <div class="form-group clearfix">
+          <div class="col-xs-6">
+            <img src="../../assets/images/holmes-logo2.png" alt="Self Service" class="pull-left login-holmes-logo" />
+          </div>
+          <div class="col-xs-6">
+            <img src="../../assets/images/wipro-logo.png" alt="wipro" class="pull-right login-wipro-logo" />
+          </div>
+        </div>
+        <div class="form-group" data-validate="Username is required">
+          <label for="inputEmail3" class="col-xs-2 label-icons">
+            <img src="../../assets/images/user-icon1.png" alt="TSG ES" class="img-responsive" width="80%" />
+          </label>
+          <div class="col-xs-10">
+            <input type="username" class="form-control" name="username" id="userid" placeholder="Enter username" [(ngModel)]="login.userid" #userid="ngModel" required>
+          </div>
+		  <span class="focus-input100"></span>
+        </div>
+        <div class="form-group" data-validate="Password is required">
+          <label for="inputPassword3" class="col-xs-2 label-icons">
+            <img src="../../assets/images/password.png" alt="TSG ES" class="img-responsive" width="80%" />
+          </label>
+          <div class="col-xs-10">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password" [(ngModel)]="login.password" #password="ngModel" required>
+          </div>
+		  <span class="focus-input100"></span>
+        </div>     
+		<!--<div class="form-group" data-validate="Domain is required">
+			<label for="inputDomain" class="col-xs-2 label-icons">
+			Domain
+			</label>
+			<div class="col-xs-10">
+				<select class="form-control" [(ngModel)]="login.domain" #domain="ngModel" name="domain" id="domain" required>
+				  <option>Wipro</option>
+				</select>
+			</div>
+			<span class="focus-input100"></span>
+		  </div>-->
+        <div class="form-group">
+          <div class="col-xs-offset-2 col-xs-10">
+            <button type="submit" class="btn btn-custom-primary btn-round btn-block"  [disabled]="f.invalid" (click)="Checklogin()">Login</button>
+          </div>
+        </div>        
+      </form>
+      <small class="copyright">Copyright 2018 © Wipro Ltd.</small>
+    </div>
+  </section>
+</div>

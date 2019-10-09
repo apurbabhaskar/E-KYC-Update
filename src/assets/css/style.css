@@ -1,4 +1,4 @@
-/* @import "https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"; */
+@import "https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css";
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 
 /* Sticky footer styles
@@ -1115,7 +1115,8 @@ a{
     height: auto;
     display: block;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
+    text-align: right;
     margin: 0 !important;
 }
 .navbar .sub-title{
@@ -1158,7 +1159,9 @@ a{
     margin-left: -185px !important;
 }
 .sidebar-hidden .navbar-brand > img{
-    opacity: 0;
+    /* opacity: 0; */
+    text-align: right;
+    /* background: url(http://lorempixel.com/200/200/city/2) right top no-repeat; */
 }
 /* Sidebar styles
 -------------------------------------------------- */
